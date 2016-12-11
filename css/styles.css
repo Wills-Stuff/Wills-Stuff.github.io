@@ -54,34 +54,9 @@
 	box-shadow: 3px 6px 6px rgba(24, 24, 24, 0.12);
 	margin: 0;
 	padding: 0;
-	display: block;
+	text-indent: 18px;
 	z-index: 1;
-	height: 1550px;
-}
-
-
-.content1 p {
-	width: 840px;
-
-}
-.content2 p {
-	width: 800px;
-		position: absolute;
-	left: 15px;
-	top: 90px;
-}
-
-.content2 h1 {
-	width: 800px;
-	
-			position: absolute;
-	left: 15px;
-}
-.content2 h2 {
-	width: 800px;
-		position: absolute;
-	left: 15px;
-	top: 140px;
+	height: 1220px;
 }
 
 
@@ -174,7 +149,12 @@ background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Fi
 }
 
 
-
+#button3{
+	position: absolute;
+	top: 1075px;
+	right: 0px;
+	width: 200px;
+}
 
 /*ELEMENTS*/
 
