@@ -1,0 +1,129 @@
+<html> <!-- Designed by Will Johnson, 2016 -->
+
+<head>
+<title>Will-Stuff - Mods</title>
+	<link rel="stylesheet" href="css/button.css"/>
+<link rel="stylesheet" href="css/styles.css"/> <!-- Stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<script>
+	function Time() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checktheTime(m);
+    s = checktheTime(s);
+    document.getElementById('siteclock').innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(Time, 500);
+}
+	function checktheTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</script>
+	
+<body background="images/bgtile.jpg">
+	<div id="wrapper">
+
+	<div class="header">
+		<div class="headerContent">
+		<img src="images/sitelogo.png" alt="DarkeComplexlogo"/>
+
+	
+	<div class="nav">
+		<ul>
+		<strong>
+	<div id="navpanel">
+		<li><a href="index.html">H O M E</a></li>
+		<li>M O D S</li>
+		<li>T U T O R I A L S</li>
+		</div>
+			</strong>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<div class="content2" style="text-align: left;">
+	<h1>GTA San Andreas Modding - CLEO Scripting - How to make a cheat code!</h1>
+
+<p>In this tutorial i will be demonstrating how with the cleo library and SannyBuilder you can develop your very own cheat codes.
+First you'll need SannyBuilder, and ofcourse the CLEO library installed on your copy of San Andreas.</p>
+
+	<h2>STEP-BY-STEP</h2>
+	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>
+<ul>
+<li>1. Open SannyBuilder</li>
+	<hr><br>
+<li>2. Go to File > New</li>
+	<hr><br>
+<li>3. You should now have a blank page open on the program, good!</li>
+	<hr><br>
+<li>4. We need to begin our script by declaring what format we want it to be saved in.
+At the very top of the page type in<br><br> {$CLEO .cs}<br><br> "Okay so? What does this do?"<br><br> This tells the program what format to compile
+your code into when you hit the compile button. In this case it's .cs which stands for CLEO Script.	</li><hr><br>
+
+<li>5. You need to create a thread, name it whatever you like. For instance i decided to name mine 'teles' as i am going
+to make a teleportation cheat code.<br><br>e.g: 03A4: name_thread 'teles'</li><hr>	<br>
+
+<li>6. Now we must create a label, to create a label just move down from your thread you created and type :'insertyourthreadsnamehere' (without quotations)
+Within labels we put in opcodes, functions and all the code which will make up what will become our script. My label is :tele</li><hr>	<br>
+
+<li>7. Let's get started on the cheat itself, in my case it's going to be a teleport.<br> 
+Type:
+<br>
+	<br>
+:teles
+	<br>
+wait 0
+	<br>
+if
+	<br>
+0ADC: test_cheat "VENTURASHEREICOME" 
+	<br>
+then
+	<br>
+else_jump @teles
+	<br>
+<br>
+	<br>
+What this is basically saying is if the player doesn't test the cheat string ("VENTURASHEREICOME") then just stay in the loop waiting for
+the moment the player types it.</li><hr>	<br>
+
+<li>8. Let's expand our code now we have a condition in place.<br>
+<br>
+Add:
+<br><br>
+Actor.PutAt($PLAYER_ACTOR, X coordinate, Y coord, Z coord)<br>            
+03E5: show_text_box "CHEAT ACTIVATED"<br>
+end<br>
+<br>
+Now our overall code is basically saying wait for the player to test the string, if the string IS tested then place the player ($PLAYER_ACTOR, this is the players global handle) at the specified coordinates and show a text box. 
+
+To figure out what coordinates your teleport is going to be you must run GTA SA, head to your location.
+ALT+TAB out of the game and open SannyBuilder, hit CTRL+ALT+1 and it will open a dialog box showing
+your coordinates, hit copy and paste the coordinates in the Actor.PutAt($PLAYER_ACTOR, _______,______,______)</li><hr>	<br>
+
+<li>9. Now compile your code by hitting the compile button, which is two buttons from the left of the options cog.
+Make sure you compile the file into your CLEO folder!</li><hr>	<br>
+
+<li>10. Test the cheat and enjoy! You can edit the outcomes of inputting the string to make your own cheats if you followed this guide.</li>
+</ul>
+
+		</div>
+		
+	</div>
+	
+	</body>
+
+	<footer>
+	
+</footer>
+
+</html>
+
+</html>
+
+

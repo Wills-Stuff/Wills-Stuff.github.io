@@ -1,0 +1,89 @@
+<html> <!-- Designed by Will Johnson, 2016 -->
+
+<head>
+<title>Will-Stuff</title>
+<link rel="icon" href="icon.png">
+<link rel="stylesheet" href="css/button.css"/>
+<link rel="stylesheet" href="css/styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+
+<script>
+	function Time() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checktheTime(m);
+    s = checktheTime(s);
+    document.getElementById('siteclock').innerHTML = h + ":" + m + ":" + s;
+    var t = setTimeout(Time, 500);
+}
+	function checktheTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</script>
+	
+<body background="images/bgtile.jpg" onload="Time()">
+
+
+	<div id="wrapper">
+	<div class="header">
+		<div class="headerContent">
+		<img src="images/sitelogo.png" alt="Willlogo"/>
+		<div style="text-align:center;" id="counter"><script type="text/javascript" src="http://services.webestools.com/cpt_pages_views/23745-8-6.js"></script></div>
+			
+	
+	<div class="nav">
+		<ul>
+		<strong>
+	<div id="navpanel">
+		<li><a href="index.html">H O M E</a></li>
+		<li><a href="mods.html">M O D S</a></li>
+		<li style="color: black;">T U T O R I A L S - COMING SOON</li>
+		</div>
+			</strong>
+		</ul>
+	</div>
+	</div>
+</div>
+
+	<div class="content1">
+		<div id="alogo"><img src="images/alogo.png" alt="Will LOGO"/></div>
+		<h1>WELCOME TO WILL'S STUFF</h1>
+		
+			
+		
+		<hr>
+		<p>Here you can find my mods, projects, and other shit.</p>
+		<p>This includes:</p>
+        <ul>
+		<li>Shitty SHAR Mods</li>
+		<li>GTA Mods</li>
+		<li>Cleo Scripts, Tutorials (GTA)</li>
+		<li>Other shit i feel like adding</li>
+		</ul>
+		<br>
+	
+		<h1>Why have i made this site?</h1>
+		<hr>
+		<p style="text-align: center;">I like toying with HTML, and CSS a lot. So making websites I find rather fun. I made this site also to share some of my creations, i'll be posting CLEO scripts, SHAR (Simpsons Hit and Run) mods, and all kinds of cool shit. I'm also studying web development a little myself so pushing some of my creative projects into my websites i make kinda works i guess, atleast it makes the pages less empty hahaha</p>
+		</div>	
+		
+</div>
+</body>
+
+<footer>
+	
+	<div class="footer">
+		<div class="footerContent">
+			<p style="font-size: 12px;">Designed by Will Johnson</p>
+			<div id="siteclock" style="font-size: 12px;"></div>
+			
+		</div>
+	</div>
+	
+</footer>
+
+</html>

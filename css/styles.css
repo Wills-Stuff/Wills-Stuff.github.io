@@ -1,0 +1,194 @@
+/*-will_styles.css-*/
+
+
+
+
+
+
+
+/*CLASSES HERE!*/
+
+.header{
+	background-color: black;
+	position: absolute;
+	width: 860px;
+	z-index: 2;
+	box-shadow: 3px 6px 6px rgba(24, 24, 24, 0.12);
+	display: block;
+}
+
+.footer{
+	width: 100%;
+	background: -webkit-linear-gradient(to top, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: white;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	z-index: 5;
+	padding-top: 1px;
+	text-indent: 20px;
+	display: inline;
+}
+
+.content1{
+	position: absolute;
+	top: 240px;
+	color: black;
+	text-indent: 18px;
+	width: 860px;
+	background-color: white;
+	box-shadow: 3px 6px 6px rgba(24, 24, 24, 0.12);
+	margin: 0;
+	padding: 0;
+	display: block;
+	z-index: 1;
+	height: 520px;
+}
+.content2{
+	position: absolute;
+	top: 240px;
+	color: black;
+	width: 860px;
+	background-color: white;
+	box-shadow: 3px 6px 6px rgba(24, 24, 24, 0.12);
+	margin: 0;
+	padding: 0;
+	display: block;
+	z-index: 1;
+	height: 1550px;
+}
+
+
+.content1 p {
+	width: 840px;
+
+}
+.content2 p {
+	width: 800px;
+		position: absolute;
+	left: 15px;
+	top: 90px;
+}
+
+.content2 h1 {
+	width: 800px;
+	
+			position: absolute;
+	left: 15px;
+}
+.content2 h2 {
+	width: 800px;
+		position: absolute;
+	left: 15px;
+	top: 140px;
+}
+
+
+.nav{
+	height: 35px;
+	background: -webkit-linear-gradient(to top, #000000 , #434343); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	z-index: 3;
+}
+
+.nav ul {
+ margin: 0;
+	padding: 0;
+}
+
+.nav ul li {
+	list-style: none;
+	float: left;
+	display: block;
+	padding: 7px;
+	color: white;
+}
+
+
+.nav a {
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	
+}
+.colorhr{
+	color:black;
+	background-color: black;
+	outline-width: thick;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*ID's*/
+#wrapper {
+  text-align: left;
+  width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+ 
+}
+
+#alogo{
+	position: absolute;
+	top: 0px;
+	left: 370px;
+	z-index: 6;
+}
+
+
+#void{
+	position: absolute;
+	left: 125px;
+	top: 160px;
+}
+
+
+
+#mods a{
+	list-style: none;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+	text-decoration: none;
+}
+
+
+#misch{
+	position: absolute;
+	left: 520px;
+	top: 20px;
+	
+}
+
+#counter{
+	position: absolute;
+	top: 202px;
+	right: 5px;
+}
+
+#siteclock{
+	position: absolute;
+	bottom: 12px;
+	font-family: 'Play';
+	right: 20px;
+}
+
+
+
+
+/*ELEMENTS*/
+
+p, li, td, h1, h2, h3 {
+	font-family: 'Play';
+}
+
+
+
+body {
+	text-align: left;
+  min-width: 860px;
+}
+
+a {
+	color: white;
+}
