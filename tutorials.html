@@ -5,6 +5,8 @@
 	<link rel="stylesheet" href="css/button.css"/>
 <link rel="stylesheet" href="css/styles.css"/> <!-- Stylesheets -->
 	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <script>
@@ -37,8 +39,8 @@
 		<strong>
 	<div id="navpanel">
 		<li><a href="index.html">H O M E</a></li>
-		<li>M O D S</li>
-		<li>T U T O R I A L S</li>
+		<li><a href="mods.html">M O D S</a></li>
+		<li><a href="tutorials.html">T U T O R I A L S</a></li>
 		</div>
 			</strong>
 		</ul>
@@ -47,13 +49,14 @@
 </div>
 
 <div class="content2" style="text-align: left;">
-	<h1>GTA San Andreas Modding - CLEO Scripting - How to make a cheat code!</h1>
+	<h1>GTA SA Modding - CLEO Coding - How to make a cheat!</h1>
 
-<p>In this tutorial i will be demonstrating how with the cleo library and SannyBuilder you can develop your very own cheat codes.
+<p>In this tutorial i will demonstrate how with CLEO coding and SannyBuilder you can make custom cheat codes.</p>
+<p>
 First you'll need SannyBuilder, and ofcourse the CLEO library installed on your copy of San Andreas.</p>
-
-	<h2>STEP-BY-STEP</h2>
-	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>	<br>
+	<li><a href="https://sannybuilder.com/index.html">Download: Sanny Builder</a></li>
+	<li><a href="http://cleo.li/">Download: CLEO 4</a></li>
+	<h2>STEP-BY-STEP</h2>		
 <ul>
 <li>1. Open SannyBuilder</li>
 	<hr><br>
@@ -69,9 +72,9 @@ your code into when you hit the compile button. In this case it's .cs which stan
 to make a teleportation cheat code.<br><br>e.g: 03A4: name_thread 'teles'</li><hr>	<br>
 
 <li>6. Now we must create a label, to create a label just move down from your thread you created and type :'insertyourthreadsnamehere' (without quotations)
-Within labels we put in opcodes, functions and all the code which will make up what will become our script. My label is :tele</li><hr>	<br>
+Within labels we put in opcodes, functions and all the code which will make up what will become our script. My label is :teles</li><hr>	<br>
 
-<li>7. Let's get started on the cheat itself, in my case it's going to be a teleport.<br> 
+<li>7. Let's get started on the cheat itself, in my case it's going to be a teleport. 
 Type:
 <br>
 	<br>
@@ -87,7 +90,7 @@ then
 	<br>
 else_jump @teles
 	<br>
-<br>
+
 	<br>
 What this is basically saying is if the player doesn't test the cheat string ("VENTURASHEREICOME") then just stay in the loop waiting for
 the moment the player types it.</li><hr>	<br>
@@ -100,11 +103,11 @@ Actor.PutAt($PLAYER_ACTOR, X coordinate, Y coord, Z coord)<br>
 03E5: show_text_box "CHEAT ACTIVATED"<br>
 end<br>
 <br>
-Now our overall code is basically saying wait for the player to test the string, if the string IS tested then place the player ($PLAYER_ACTOR, this is the players global handle) at the specified coordinates and show a text box. 
+Now our overall code is basically saying wait for the player to test the string, if the string IS tested then place the player ($PLAYER_ACTOR, this is the players global handle) at the specified coordinates and show a text box. The text box will appear in caps, but if you have the GXTHook plugin and create a text id with your own custom text, it won't be case sensitive 
 
 To figure out what coordinates your teleport is going to be you must run GTA SA, head to your location.
 ALT+TAB out of the game and open SannyBuilder, hit CTRL+ALT+1 and it will open a dialog box showing
-your coordinates, hit copy and paste the coordinates in the Actor.PutAt($PLAYER_ACTOR, _______,______,______)</li><hr>	<br>
+your coordinates, hit copy and paste the coordinates in the <br>Actor.PutAt($PLAYER_ACTOR, _______,______,______)</li><hr>	<br>
 
 <li>9. Now compile your code by hitting the compile button, which is two buttons from the left of the options cog.
 Make sure you compile the file into your CLEO folder!</li><hr>	<br>
