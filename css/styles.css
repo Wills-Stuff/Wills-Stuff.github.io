@@ -43,7 +43,7 @@
 	padding: 0;
 	display: block;
 	z-index: 1;
-	height: 700px;
+	height: 725px;
 }
 .content2{
 	position: absolute;
@@ -166,7 +166,7 @@ background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Fi
 }
 #css-seal{
 	position: absolute;
-	bottom: 42px;
+	bottom: 62px;
 	left: 240px;
 	z-index: 6;
 	
