@@ -57,7 +57,7 @@
 	display: block;
 	text-indent: 18px;
 	z-index: 1;
-	height: 1580px;
+	height: 1220px;
 }
 
 
@@ -170,9 +170,6 @@ body {
   min-width: 860px;
 }
 
-a {color:green;
-   }
-
-ul a {
+a {
 	color: white;
 }
