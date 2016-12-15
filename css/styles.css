@@ -43,7 +43,7 @@
 	padding: 0;
 	display: block;
 	z-index: 1;
-	height: 520px;
+	height: 700px;
 }
 .content2{
 	position: absolute;
@@ -157,12 +157,27 @@ background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Fi
 	width: 200px;
 }
 
+#footerbanner{
+	position: absolute;
+	top: 470px;
+	left: 10px;
+	z-index: 2;
+	
+}
+#css-seal{
+	position: absolute;
+	bottom: 42px;
+	left: 240px;
+	z-index: 6;
+	
+}
 /*ELEMENTS*/
 
 p, li, td, h1, h2, h3 {
 	font-family: 'Play';
 }
 
+html {background: url(bgtile.jpg);}
 
 
 body {
