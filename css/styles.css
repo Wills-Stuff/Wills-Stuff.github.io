@@ -166,9 +166,16 @@ background: linear-gradient(to top, #000000 , #434343); /* W3C, IE 10+/ Edge, Fi
 }
 #css-seal{
 	position: absolute;
-	bottom: 62px;
-	left: 240px;
+	bottom: 46px;
+	left: 610px;
 	z-index: 6;
+	
+}
+#html-seal{
+	position: absolute;
+	bottom: 62px;
+	left: 700px;
+	z-index: 7;
 	
 }
 /*ELEMENTS*/
