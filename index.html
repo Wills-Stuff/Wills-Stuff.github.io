@@ -15,29 +15,12 @@
 <link rel="stylesheet" href="css/button.css"/>
 <link rel="stylesheet" href="css/styles.css"/>
 <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
-
-<script>
-	function Time() {
-    var today = new Date();
-    var h = today.getHours();
-    var m = today.getMinutes();
-    var s = today.getSeconds();
-    m = checktheTime(m);
-    s = checktheTime(s);
-    document.getElementById('siteclock').innerHTML = h + ":" + m + ":" + s;
-    var t = setTimeout(Time, 500);
-}
-	function checktheTime(i) {
-    if (i < 10) {i = "0" + i};  
-    return i;
-}
-</script>	
 	
 </head>
 
 
 	
-<body onload="Time()">
+<body>
 
 	<div id="wrapper">
 	<div class="header">
@@ -82,7 +65,7 @@
 		<div id="css-seal">
 		<p>
 			<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    	<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+    	<img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
     	</a>
 		</p></div>
 		<div id="html-seal"><a style="text-decoration: none" href="http://validator.w3.org/check?uri=referer">
