@@ -9,7 +9,10 @@
 /*CLASSES HERE!*/
 
 .header{
-	background-color: black;
+	background-image: url(slogoback.png);
+	background-size: cover;
+	border-radius: 20px;
+	/*background-color: black;*/
 	position: absolute;
 	width: 860px;
 	z-index: 2;
